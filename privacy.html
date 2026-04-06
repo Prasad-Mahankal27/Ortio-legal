@@ -78,32 +78,50 @@
 
     /* ───── HERO BANNER ───── */
     .hero {
-      background: linear-gradient(135deg, #1F41BB 0%, #6366F1 100%);
-      color: white;
-      padding: 56px 24px 48px;
+      background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+      color: var(--text-primary);
+      padding: 64px 24px 56px;
       text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(31, 65, 187, 0.15);
+      border: 4px solid white;
+      margin-bottom: 20px;
+      display: inline-block;
     }
     .hero h1 {
-      font-size: clamp(28px, 5vw, 42px);
+      font-size: clamp(32px, 5vw, 48px);
       font-weight: 800;
       letter-spacing: -1px;
       margin-bottom: 12px;
+      color: var(--text-primary);
     }
     .hero p {
-      font-size: 15px;
-      opacity: 0.85;
-      max-width: 480px;
-      margin: 0 auto 20px;
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 24px;
+    }
+    .badge-wrapper {
+      display: flex;
+      justify-content: center;
     }
     .badge {
       display: inline-block;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.3);
+      background: var(--brand-light);
+      color: var(--brand);
+      border: 1px solid rgba(31, 65, 187, 0.2);
       border-radius: 100px;
-      padding: 6px 18px;
-      font-size: 13px;
+      padding: 6px 20px;
+      font-size: 14px;
       font-weight: 600;
-      backdrop-filter: blur(8px);
     }
 
     /* ───── LAYOUT ───── */
@@ -331,16 +349,21 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo">O</div>
-    <span class="header-title">Ortio</span>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <div class="logo">O</div>
+        <span class="header-title">Ortio</span>
+    </div>
     <span class="header-subtitle">Effective: 7 April 2026</span>
   </div>
 </header>
 
 <div class="hero">
+  <img src="logo.png" alt="Ortio Logo" class="hero-logo" />
   <h1>Privacy Policy</h1>
   <p>How Ortio collects, uses, and protects your personal information.</p>
-  <span class="badge">Last Updated: 7 April 2026</span>
+  <div class="badge-wrapper">
+    <span class="badge">Last Updated: 7 April 2026</span>
+  </div>
 </div>
 
 <main>
