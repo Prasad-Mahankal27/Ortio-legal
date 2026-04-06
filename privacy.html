@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Ortio</title>
+  <meta name="description" content="Privacy Policy for Ortio — the multilingual language exam preparation app for Goethe, DELF, DELE, HSK, and JLPT." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #1F41BB;
+      --brand-light: #EEF2FF;
+      --text-primary: #111827;
+      --text-secondary: #4B5563;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #F9FAFB;
+      --white: #ffffff;
+      --accent: #10B981;
+      --warn: #F59E0B;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ───── HEADER ───── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--brand), #6366F1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    .header-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    .header-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    /* ───── HERO BANNER ───── */
+    .hero {
+      background: linear-gradient(135deg, #1F41BB 0%, #6366F1 100%);
+      color: white;
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 15px;
+      opacity: 0.85;
+      max-width: 480px;
+      margin: 0 auto 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+
+    /* ───── LAYOUT ───── */
+    main {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ───── TOC ───── */
+    .toc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    }
+    .toc-card h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 20px;
+    }
+    .toc-list a {
+      color: var(--brand);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+    .toc-list a:hover { opacity: 0.7; text-decoration: underline; }
+    @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+
+    /* ───── SECTIONS ───── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+      scroll-margin-top: 80px;
+    }
+    @media (max-width: 600px) { section { padding: 24px 20px; } }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sec-num {
+      background: var(--brand);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 24px 0 10px;
+    }
+    h3:first-child { margin-top: 0; }
+
+    p { color: var(--text-secondary); margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--brand); }
+
+    /* ───── CALLOUT BOXES ───── */
+    .callout {
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+    }
+    .callout-icon { flex-shrink: 0; font-size: 16px; }
+    .callout-info { background: #EFF6FF; border-left: 4px solid #3B82F6; color: #1E40AF; }
+    .callout-warn { background: #FFFBEB; border-left: 4px solid var(--warn); color: #92400E; }
+    .callout-success { background: #ECFDF5; border-left: 4px solid var(--accent); color: #065F46; }
+    .callout-danger { background: #FEF2F2; border-left: 4px solid #EF4444; color: #991B1B; }
+
+    /* ───── TABLES ───── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th {
+      background: var(--brand-light);
+      color: var(--brand);
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    td {
+      padding: 10px 14px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #F9FAFB; }
+
+    /* ───── THIRD-PARTY CARDS ───── */
+    .service-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .service-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .service-name { font-weight: 700; font-size: 15px; color: var(--text-primary); margin-bottom: 2px; }
+    .service-desc { font-size: 13px; color: var(--text-secondary); }
+    .service-link { font-size: 12px; color: var(--brand); margin-top: 4px; display: inline-block; }
+
+    /* ───── PERMISSION TAGS ───── */
+    .perm-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .perm-row:last-child { border-bottom: none; }
+    .perm-tag {
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--brand-light);
+      color: var(--brand);
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .perm-desc { font-size: 14px; color: var(--text-secondary); }
+
+    /* ───── CONTACT CARD ───── */
+    .contact-card {
+      background: linear-gradient(135deg, #1F41BB 0%, #6366F1 100%);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      color: white;
+      text-align: center;
+    }
+    .contact-card h3 { color: white; margin-bottom: 6px; font-size: 22px; }
+    .contact-card p { color: rgba(255,255,255,0.85); margin-bottom: 16px; }
+    .contact-email {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .contact-email:hover { background: rgba(255,255,255,0.25); }
+
+    /* ───── FOOTER ───── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">O</div>
+    <span class="header-title">Ortio</span>
+    <span class="header-subtitle">Effective: 7 April 2026</span>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Privacy Policy</h1>
+  <p>How Ortio collects, uses, and protects your personal information.</p>
+  <span class="badge">Last Updated: 7 April 2026</span>
+</div>
+
+<main>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-card">
+    <h2>Contents</h2>
+    <ul class="toc-list">
+      <li><a href="#s1">1. Introduction</a></li>
+      <li><a href="#s2">2. Data Controller</a></li>
+      <li><a href="#s3">3. Information We Collect</a></li>
+      <li><a href="#s4">4. How We Use Your Information</a></li>
+      <li><a href="#s5">5. Legal Basis (GDPR)</a></li>
+      <li><a href="#s6">6. Data Storage</a></li>
+      <li><a href="#s7">7. Third-Party Services</a></li>
+      <li><a href="#s8">8. End-to-End Encryption</a></li>
+      <li><a href="#s9">9. Push Notifications</a></li>
+      <li><a href="#s10">10. Billing & Subscriptions</a></li>
+      <li><a href="#s11">11. Data Security</a></li>
+      <li><a href="#s12">12. Data Retention</a></li>
+      <li><a href="#s13">13. Account & Data Deletion</a></li>
+      <li><a href="#s14">14. Your Privacy Rights</a></li>
+      <li><a href="#s15">15. App Permissions</a></li>
+      <li><a href="#s16">16. Children's Privacy</a></li>
+      <li><a href="#s17">17. International Transfers</a></li>
+      <li><a href="#s18">18. Changes to This Policy</a></li>
+      <li><a href="#s19">19. Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- S1 -->
+  <section id="s1">
+    <h2><span class="sec-num">1</span> Introduction</h2>
+    <p>Prasad Mahankal ("I", "me", or "the developer") operates the mobile application <strong>Ortio</strong>, available on <strong>Android (Google Play Store)</strong> (the "Service").</p>
+    <p>Ortio is a multilingual language learning app that helps users practice and prepare for official language certifications including <strong>Goethe-Institut (German)</strong>, <strong>DELF/DALF (French)</strong>, <strong>DELE (Spanish)</strong>, <strong>HSK (Chinese)</strong>, <strong>JLPT (Japanese)</strong>, and more.</p>
+    <p>This Privacy Policy describes how I collect, use, store, and protect your personal information, and the rights you have regarding your data.</p>
+    <p>This policy aims to comply with:</p>
+    <ul>
+      <li><strong>General Data Protection Regulation (GDPR)</strong> — EU/EEA users</li>
+      <li><strong>California Consumer Privacy Act (CCPA)</strong> — California residents</li>
+      <li>Google Play Developer Program Policies</li>
+      <li><strong>Children's Online Privacy Protection Act (COPPA)</strong></li>
+    </ul>
+  </section>
+
+  <!-- S2 -->
+  <section id="s2">
+    <h2><span class="sec-num">2</span> Data Controller</h2>
+    <p><strong>App Name:</strong> Ortio</p>
+    <p><strong>Developer:</strong> Prasad Mahankal (individual / sole developer)</p>
+    <p><strong>Contact:</strong> <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></p>
+    <div class="callout callout-info">
+      <span class="callout-icon">ℹ️</span>
+      <span>If you are an EU resident who requires a formal GDPR representative address, please contact me directly at support.ortio@gmail.com.</span>
+    </div>
+  </section>
+
+  <!-- S3 -->
+  <section id="s3">
+    <h2><span class="sec-num">3</span> Information We Collect</h2>
+
+    <h3>3.1 Account Information</h3>
+    <p>Creating an account is required to use Ortio. I collect:</p>
+    <ul>
+      <li><strong>Email address</strong> — for authentication and communication</li>
+      <li><strong>Display name / username</strong> — displayed on your public profile</li>
+      <li><strong>Password</strong> — stored as a secure hash by Supabase; never stored in plaintext</li>
+      <li><strong>Profile photo</strong> — optional, only if you choose to upload one</li>
+      <li><strong>Supabase User ID</strong> — internal identifier used to link all your data</li>
+      <li><strong>Google account details</strong> (name, email, Google ID) — only if you sign in with Google</li>
+    </ul>
+
+    <h3>3.2 Practice & Learning Data</h3>
+    <ul>
+      <li>Your answers to quizzes, mock tests, and practice questions</li>
+      <li>Test scores, completion times, and attempt history</li>
+      <li>Language preferences and learning progress</li>
+      <li>Notes you save within the app</li>
+    </ul>
+
+    <h3>3.3 Social & Communication Data</h3>
+    <ul>
+      <li><strong>Posts, comments, and reactions</strong> you create in the community feed</li>
+      <li><strong>Human Chat messages</strong> — sent to other users. These are <strong>end-to-end encrypted (E2EE)</strong> using TweetNaCl. Message content is stored as ciphertext on the server — I cannot read your messages.</li>
+      <li><strong>AI Chat conversations</strong> — your messages to the AI tutor are sent to third-party AI providers in real time to generate responses (see Section 7)</li>
+    </ul>
+
+    <h3>3.4 Technical & Device Information</h3>
+    <ul>
+      <li>Device model and operating system version</li>
+      <li>App version</li>
+      <li>Android ID — device identifier</li>
+      <li>Crash logs and error reports (Firebase Crashlytics)</li>
+      <li>App usage events (Firebase Analytics)</li>
+      <li>Network type (WiFi / cellular)</li>
+      <li>Firebase Cloud Messaging (FCM) push notification token</li>
+    </ul>
+  </section>
+
+  <!-- S4 -->
+  <section id="s4">
+    <h2><span class="sec-num">4</span> How I Use Your Information</h2>
+    <ul>
+      <li>To authenticate and maintain your account</li>
+      <li>To provide all app features (mock tests, quizzes, AI chat, human chat, community feed, notes, language games)</li>
+      <li>To send push notifications — practice reminders, chat messages, activity updates — only with your permission</li>
+      <li>To process your text and audio inputs through AI services and return learning responses</li>
+      <li>To improve the app using anonymous usage analytics and crash data</li>
+      <li>To detect and prevent abuse or unauthorized access</li>
+      <li>To respond to your support requests</li>
+    </ul>
+  </section>
+
+  <!-- S5 -->
+  <section id="s5">
+    <h2><span class="sec-num">5</span> Legal Basis for Processing (GDPR)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Purpose</th><th>Legal Basis</th></tr></thead>
+        <tbody>
+          <tr><td>Account creation & core app features</td><td><strong>Contract</strong> (Art. 6(1)(b))</td></tr>
+          <tr><td>Analytics & crash reporting</td><td><strong>Legitimate Interest</strong> (Art. 6(1)(f))</td></tr>
+          <tr><td>Push notifications</td><td><strong>Consent</strong> (Art. 6(1)(a))</td></tr>
+          <tr><td>Security & abuse prevention</td><td><strong>Legitimate Interest</strong> (Art. 6(1)(f))</td></tr>
+          <tr><td>Legal compliance</td><td><strong>Legal Obligation</strong> (Art. 6(1)(c))</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- S6 -->
+  <section id="s6">
+    <h2><span class="sec-num">6</span> Data Storage</h2>
+
+    <h3>Server-Side (Supabase)</h3>
+    <p>Your account details, practice history, posts, notes, and encrypted chat messages are stored in a Supabase PostgreSQL database hosted on secure cloud infrastructure. All data in transit is protected by TLS/HTTPS. Supabase Row-Level Security (RLS) ensures each user can only access their own data.</p>
+
+    <h3>On Your Device (Local Storage)</h3>
+    <p>Using <strong>AsyncStorage</strong> and <strong>react-native-keychain</strong>, the following is stored locally:</p>
+    <ul>
+      <li>Session token — secured in Android Keystore</li>
+      <li>Your E2EE private key for Human Chat — <strong>this key never leaves your device</strong></li>
+      <li>App settings (audio speed, auto-play preferences)</li>
+      <li>Cached content for performance</li>
+    </ul>
+    <div class="callout callout-danger">
+      <span class="callout-icon">⚠️</span>
+      <span><strong>Important:</strong> If you uninstall the app or clear app data, your local E2EE private key is permanently deleted. You will not be able to decrypt old Human Chat messages afterwards.</span>
+    </div>
+  </section>
+
+  <!-- S7 -->
+  <section id="s7">
+    <h2><span class="sec-num">7</span> Third-Party Services</h2>
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🗄️</div>
+        <div>
+          <div class="service-name">Supabase</div>
+          <div class="service-desc">Authentication, database, and real-time messaging infrastructure.</div>
+          <a class="service-link" href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔥</div>
+        <div>
+          <div class="service-name">Firebase (Android only)</div>
+          <div class="service-desc">Push notifications (FCM), app analytics, and crash reporting (Crashlytics).</div>
+          <a class="service-link" href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+        <div>
+          <div class="service-name">Google Sign-In</div>
+          <div class="service-desc">If you sign in with Google, I receive your name, email, and Google account ID via OAuth.</div>
+          <a class="service-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <div>
+          <div class="service-name">Google Gemini 2.5 Flash Lite (AI Chat)</div>
+          <div class="service-desc">Powers the AI tutor feature. Your text input is sent to Google's API to generate learning responses.</div>
+          <a class="service-link" href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎙️</div>
+        <div>
+          <div class="service-name">Groq Whisper API (Speech / Mock Tests)</div>
+          <div class="service-desc">For speaking-based mock test features, your audio input is processed by Groq's Whisper API for speech-to-text transcription.</div>
+          <a class="service-link" href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <div>
+          <div class="service-name">Google Play Billing (Android)</div>
+          <div class="service-desc">In-app purchases and subscriptions on Android are processed by Google Play. I receive only purchase confirmation and subscription status — never your payment details.</div>
+          <a class="service-link" href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">Privacy Policy ↗</a>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="callout callout-success" style="margin-top: 20px;">
+      <span class="callout-icon">✅</span>
+      <span><strong>I do not sell your personal data to any third party.</strong></span>
+    </div>
+  </section>
+
+  <!-- S8 -->
+  <section id="s8">
+    <h2><span class="sec-num">8</span> End-to-End Encryption (Human Chat)</h2>
+    <p>Human Chat messages in Ortio are protected with <strong>end-to-end encryption (E2EE)</strong> powered by TweetNaCl:</p>
+    <ul>
+      <li>Messages are encrypted on <em>your device</em> using the recipient's public key before being transmitted</li>
+      <li>Only the encrypted ciphertext is stored on the server — I cannot read your messages</li>
+      <li>Messages are decrypted only on the recipient's device using their private key, which is stored exclusively in their device's secure keychain</li>
+      <li>This is a <strong>zero-knowledge</strong> design: even in the event of a server breach, your message content remains unreadable</li>
+    </ul>
+  </section>
+
+  <!-- S9 -->
+  <section id="s9">
+    <h2><span class="sec-num">9</span> Push Notifications</h2>
+    <p>With your permission, Ortio may send push notifications for:</p>
+    <ul>
+      <li>Daily practice reminders</li>
+      <li>New Human Chat messages</li>
+      <li>Community activity (comments, reactions on your posts)</li>
+      <li>Account-related updates</li>
+    </ul>
+    <p>You can disable notifications at any time in <strong>Settings → Apps → Ortio → Notifications</strong> on your Android device.</p>
+  </section>
+
+  <!-- S10 -->
+  <section id="s10">
+    <h2><span class="sec-num">10</span> Billing &amp; Subscriptions</h2>
+    <p>Ortio offers paid subscription plans through a credit-based system. In-app purchases are processed through <strong>Google Play Billing</strong>.</p>
+    <p>When you make a purchase:</p>
+    <ul>
+      <li>Payment is handled entirely by Google Play — I never see or store your card number or financial details</li>
+      <li>I receive only confirmation of the purchase and your subscription status from Google Play</li>
+      <li>Purchase receipts are retained while your subscription is active, plus 1 year for tax and legal compliance</li>
+      <li>Refunds are managed by Google Play according to their refund policy</li>
+    </ul>
+    <div class="callout callout-success">
+      <span class="callout-icon">🔒</span>
+      <span><strong>Your payment information is never shared with or stored by Ortio.</strong> All billing is managed securely by Google Play.</span>
+    </div>
+  </section>
+
+  <!-- S11 -->
+  <section id="s11">
+    <h2><span class="sec-num">11</span> Data Security</h2>
+    <ul>
+      <li>All data in transit is encrypted using TLS/SSL</li>
+      <li>Passwords are hashed and salted by Supabase — never stored in plaintext</li>
+      <li>Human Chat uses zero-knowledge E2EE (TweetNaCl)</li>
+      <li>Session tokens are stored in the Android Keystore</li>
+      <li>Supabase Row-Level Security restricts all data access per user</li>
+      <li>Dependencies are regularly reviewed and updated for known security vulnerabilities</li>
+    </ul>
+  </section>
+
+  <!-- S12 -->
+  <section id="s12">
+    <h2><span class="sec-num">12</span> Data Retention</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead>
+        <tbody>
+          <tr><td>Account & profile data</td><td>Retained while your account exists</td></tr>
+          <tr><td>Practice history & notes</td><td>Retained while your account exists</td></tr>
+          <tr><td>Social posts & comments</td><td>Retained until you delete them or your account</td></tr>
+          <tr><td>Human Chat messages (ciphertext)</td><td>Retained until deleted by users or upon account deletion</td></tr>
+          <tr><td>Firebase Analytics data</td><td>14 months (Firebase default)</td></tr>
+          <tr><td>Crash reports (Crashlytics)</td><td>90 days</td></tr>
+          <tr><td>Purchase receipts</td><td>While subscription is active + 1 year for tax/legal compliance</td></tr>
+          <tr><td>Local device data (AsyncStorage, Keychain)</td><td>Until app is uninstalled or app data is cleared</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- S13 -->
+  <section id="s13">
+    <h2><span class="sec-num">13</span> Account &amp; Data Deletion</h2>
+    <div class="callout callout-warn">
+      <span class="callout-icon">⚠️</span>
+      <span>There is currently <strong>no in-app account deletion feature</strong>. To delete your account and all associated data, please email me directly.</span>
+    </div>
+    <p>To request account deletion:</p>
+    <ol>
+      <li>Email <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></li>
+      <li>Use the subject line: <strong>"Account Deletion Request"</strong></li>
+      <li>Include the email address linked to your Ortio account</li>
+    </ol>
+    <p>I will process your request within <strong>30 days</strong>.</p>
+    <p>You may also delete individual posts, comments, and notes from within the app. Uninstalling the app removes all locally stored data from your device.</p>
+  </section>
+
+  <!-- S14 -->
+  <section id="s14">
+    <h2><span class="sec-num">14</span> Your Privacy Rights</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Right</th><th>What It Means</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Access</strong></td><td>Request a copy of your personal data</td></tr>
+          <tr><td><strong>Rectification</strong></td><td>Ask me to correct inaccurate data</td></tr>
+          <tr><td><strong>Erasure</strong></td><td>Request deletion of your account and all data</td></tr>
+          <tr><td><strong>Portability</strong></td><td>Receive your data in a structured, portable format</td></tr>
+          <tr><td><strong>Objection</strong></td><td>Object to certain types of processing</td></tr>
+          <tr><td><strong>Withdraw Consent</strong></td><td>Disable push notifications at any time via device Settings</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>CCPA Rights (California Residents)</h3>
+    <ul>
+      <li>Right to know what data I collect and how it is used</li>
+      <li>Right to request deletion of your personal information</li>
+      <li>Right to opt out of the sale of personal information — <strong>I do not sell your data</strong></li>
+      <li>Right to non-discrimination for exercising these rights</li>
+    </ul>
+    <p>To exercise any right, email <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a>. I will respond within <strong>30 days</strong>.</p>
+  </section>
+
+  <!-- S15 -->
+  <section id="s15">
+    <h2><span class="sec-num">15</span> App Permissions</h2>
+    <div style="margin-top: 4px;">
+      <div class="perm-row">
+        <span class="perm-tag">Internet</span>
+        <span class="perm-desc">Required for all network features — authentication, content, chat, AI responses, push notifications</span>
+      </div>
+      <div class="perm-row">
+        <span class="perm-tag">Notifications</span>
+        <span class="perm-desc">For push notification delivery — practice reminders and chat messages</span>
+      </div>
+      <div class="perm-row">
+        <span class="perm-tag">Microphone</span>
+        <span class="perm-desc">For speaking-based mock test features (audio recorded and sent to Groq Whisper API)</span>
+      </div>
+      <div class="perm-row">
+        <span class="perm-tag">Camera / Photos</span>
+        <span class="perm-desc">For uploading profile photos and post images</span>
+      </div>
+      <div class="perm-row">
+        <span class="perm-tag">Storage</span>
+        <span class="perm-desc">For caching content locally on your device</span>
+      </div>
+      <div class="perm-row">
+        <span class="perm-tag">Network State</span>
+        <span class="perm-desc">To detect connectivity type and optimize data usage</span>
+      </div>
+    </div>
+    <p style="margin-top: 16px;">You can revoke any permission at any time from <strong>Settings → Apps → Ortio → Permissions</strong> on your Android device.</p>
+  </section>
+
+  <!-- S16 -->
+  <section id="s16">
+    <h2><span class="sec-num">16</span> Children's Privacy</h2>
+    <p>Ortio is not intended for children under <strong>13 years of age</strong> (or <strong>16 in the EU</strong>). I do not knowingly collect personal information from children.</p>
+    <p>If you are a parent or guardian and believe your child has created an account, please contact me immediately at <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a> and I will delete the account and all associated data promptly.</p>
+  </section>
+
+  <!-- S17 -->
+  <section id="s17">
+    <h2><span class="sec-num">17</span> International Data Transfers</h2>
+    <p>Your data is processed and stored on infrastructure operated by Supabase and Google (Firebase), which may be located in the United States or other countries outside your country of residence.</p>
+    <p>For EU users, such transfers are covered by appropriate safeguards (such as Standard Contractual Clauses) as implemented by these providers. By using Ortio, you acknowledge this.</p>
+  </section>
+
+  <!-- S18 -->
+  <section id="s18">
+    <h2><span class="sec-num">18</span> Changes to This Policy</h2>
+    <p>If I make significant changes to this Privacy Policy, I will:</p>
+    <ul>
+      <li>Notify you via a push notification or in-app message</li>
+      <li>Update the "Last Updated" date at the top of this page</li>
+    </ul>
+    <p>Continued use of Ortio after changes constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <!-- S19 -->
+  <section id="s19">
+    <h2><span class="sec-num">19</span> Contact</h2>
+    <div class="contact-card">
+      <h3>Questions or Requests?</h3>
+      <p>For any privacy-related questions, data access requests, or account deletion, reach out directly:</p>
+      <a class="contact-email" href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a>
+    </div>
+    <div style="margin-top: 20px;">
+      <p><strong>EU Residents:</strong> You have the right to lodge a complaint with your national data protection authority. Find your DPA at: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">edpb.europa.eu</a></p>
+      <p><strong>California Residents:</strong> Contact the CPPA at: <a href="https://cppa.ca.gov/" target="_blank" rel="noopener">cppa.ca.gov</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Privacy Policy for <strong>Ortio</strong> — Developed by Prasad Mahankal</p>
+  <p style="margin-top: 6px;">Last updated: 7 April 2026 &nbsp;·&nbsp; <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
