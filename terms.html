@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Ortio</title>
+  <meta name="description" content="Terms of Service for Ortio — the multilingual language exam preparation app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #1F41BB;
+      --brand-light: #EEF2FF;
+      --text-primary: #111827;
+      --text-secondary: #4B5563;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #F9FAFB;
+      --white: #ffffff;
+      --accent: #10B981;
+      --warn: #F59E0B;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ───── HEADER ───── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--brand), #6366F1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    .header-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    .header-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    /* ───── HERO BANNER ───── */
+    .hero {
+      background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+      color: var(--text-primary);
+      padding: 64px 24px 56px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(31, 65, 187, 0.15);
+      border: 4px solid white;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    .hero p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 24px;
+    }
+    .badge-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      border: 1px solid rgba(31, 65, 187, 0.2);
+      border-radius: 100px;
+      padding: 6px 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* ───── LAYOUT ───── */
+    main {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ───── TOC ───── */
+    .toc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    }
+    .toc-card h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 20px;
+    }
+    .toc-list a {
+      color: var(--brand);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+    .toc-list a:hover { opacity: 0.7; text-decoration: underline; }
+    @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+
+    /* ───── SECTIONS ───── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+      scroll-margin-top: 80px;
+    }
+    @media (max-width: 600px) { section { padding: 24px 20px; } }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sec-num {
+      background: var(--brand);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 24px 0 10px;
+    }
+    h3:first-child { margin-top: 0; }
+
+    p { color: var(--text-secondary); margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--brand); }
+
+    /* ───── CALLOUT BOXES ───── */
+    .callout {
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+    }
+    .callout-icon { flex-shrink: 0; font-size: 16px; }
+    .callout-info { background: #EFF6FF; border-left: 4px solid #3B82F6; color: #1E40AF; }
+    .callout-warn { background: #FFFBEB; border-left: 4px solid var(--warn); color: #92400E; }
+    .callout-success { background: #ECFDF5; border-left: 4px solid var(--accent); color: #065F46; }
+    .callout-danger { background: #FEF2F2; border-left: 4px solid #EF4444; color: #991B1B; }
+
+    /* ───── FOOTER ───── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="logo.png" alt="Ortio Icon" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;" />
+        <span class="header-title">Ortio</span>
+    </div>
+    <span class="header-subtitle">Effective: 7 April 2026</span>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="logo.png" alt="Ortio Logo" class="hero-logo" />
+  <h1>Terms of Service</h1>
+  <p>Please read these terms carefully before accessing or using the Ortio mobile application.</p>
+  <div class="badge-wrapper">
+    <span class="badge">Last Updated: 7 April 2026</span>
+  </div>
+</div>
+
+<main>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-card">
+    <h2>Contents</h2>
+    <ul class="toc-list">
+      <li><a href="#s1">1. Acceptance of Terms</a></li>
+      <li><a href="#s2">2. Service Description</a></li>
+      <li><a href="#s3">3. User Accounts</a></li>
+      <li><a href="#s4">4. Fees and Payments</a></li>
+      <li><a href="#s5">5. Acceptable Use</a></li>
+      <li><a href="#s6">6. Intellectual Property & Disclaimers</a></li>
+      <li><a href="#s7">7. Privacy and Data Protection</a></li>
+      <li><a href="#s8">8. Third-Party Services</a></li>
+      <li><a href="#s9">9. Limitation of Liability</a></li>
+      <li><a href="#s10">10. Indemnification</a></li>
+      <li><a href="#s11">11. Termination</a></li>
+      <li><a href="#s12">12. Changes to Terms</a></li>
+      <li><a href="#s13">13. Governing Law</a></li>
+      <li><a href="#s14">14. Contact Information</a></li>
+    </ul>
+  </div>
+
+  <!-- S1 -->
+  <section id="s1">
+    <h2><span class="sec-num">1</span> Acceptance of Terms</h2>
+    <p>By accessing and using the <strong>Ortio</strong> mobile application (the "Service") on Android, developed by Prasad Mahankal, you agree to be bound by these Terms of Service. If you do not agree to these Terms, please do not use our Service.</p>
+    <div class="callout callout-info">
+      <span class="callout-icon">ℹ️</span>
+      <span><strong>Important:</strong> These Terms constitute a legally binding agreement between you and the developer of Ortio. Please read them carefully.</span>
+    </div>
+  </section>
+
+  <!-- S2 -->
+  <section id="s2">
+    <h2><span class="sec-num">2</span> Service Description</h2>
+    <p>Ortio provides multilingual language exam preparation materials, including:</p>
+    <ul>
+      <li>Practice questions and quizzes for languages such as German, French, Spanish, Chinese, Japanese, and others.</li>
+      <li>AI-powered Chat tutoring and speaking exercises using Google's Gemini 2.5 Flash Lite and Grok Whisper API.</li>
+      <li>Human chat with end-to-end encryption (E2EE) using TweetNaCl.</li>
+      <li>Community feeds, notes, and language games.</li>
+    </ul>
+    <div class="callout callout-warn">
+      <span class="callout-icon">⚠️</span>
+      <span><strong>Note:</strong> Our Service is for educational preparation only. We are not officially affiliated with the Goethe-Institut, DELF/DALF, DELE, HSK, JLPT providers, or any official examination body. We do not administer official exams or issue authorized certificates.</span>
+    </div>
+  </section>
+
+  <!-- S3 -->
+  <section id="s3">
+    <h2><span class="sec-num">3</span> User Accounts</h2>
+    <p>To access the features of Ortio, you must create a user account via email or Google Sign-In. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+    <p>You agree to provide accurate, current, and complete information during the registration process. To request the deletion of your account and all associated data, you must contact us via email at <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a>.</p>
+  </section>
+
+  <!-- S4 -->
+  <section id="s4">
+    <h2><span class="sec-num">4</span> Fees and Payments</h2>
+    <h3>4.1 Subscriptions and Tiers</h3>
+    <p>Ortio offers paid premium features through a credit-based subscription system. This provides enhanced access to AI tutoring, advanced mock tests, and extended practice queries.</p>
+    
+    <h3>4.2 Payments and Billing</h3>
+    <p>All in-app purchases and subscriptions are securely processed by <strong>Google Play Billing</strong>. Ortio never requests, receives, or stores your financial or credit card information.</p>
+
+    <h3>4.3 Automatic Renewal & Cancellation</h3>
+    <p>To ensure uninterrupted study, premium subscription plans renew automatically at the end of the billing cycle. You may cancel your subscription at any time through your Google Play Store settings. You will retain premium access until the end of your current paid billing period.</p>
+
+    <h3>4.4 Refunds</h3>
+    <p>All subscriptions are managed via Google Play, and any requests for refunds must be processed in accordance with Google Play's standard refund policies. Exceptional circumstances can be directed to <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a>.</p>
+  </section>
+
+  <!-- S5 -->
+  <section id="s5">
+    <h2><span class="sec-num">5</span> Acceptable Use</h2>
+    <p>You agree to use Ortio only for lawful purposes. You agree not to:</p>
+    <ul>
+      <li>Violate any applicable local, national, or international laws or regulations.</li>
+      <li>Share your account credentials with others or use the service to commit fraud.</li>
+      <li>Use the Service to transmit abusive, hateful, or harmful content to other users in the Human Chat or Community Feed.</li>
+      <li>Attempt to reverse engineer, hack, or compromise the app or its servers.</li>
+      <li>Use automated scraping systems or bots to extract our proprietary content or questions.</li>
+    </ul>
+    <p>Accounts found violating these rules may be suspended or permanently banned without prior notice.</p>
+  </section>
+
+  <!-- S6 -->
+  <section id="s6">
+    <h2><span class="sec-num">6</span> Intellectual Property & Content Disclaimers</h2>
+    <p>The Ortio application, including its underlying software, design, user interface, and original content (explanations, mock formats, AI configurations) is owned entirely by Prasad Mahankal and is protected by international copyright laws.</p>
+    
+    <div class="callout callout-info">
+      <span class="callout-icon">📝</span>
+      <span><strong>Content Disclaimer:</strong> Our practice questions and mock tests are independently created for educational purposes. They are modeled after official examination formats to provide realistic preparation. We make no proprietary claims over official exam structures, trademarked names (e.g., "Goethe-Zertifikat", "DELF"), or grading algorithms belonging to the respective official institutes.</span>
+    </div>
+
+    <p>You are granted a personal, non-commercial, non-exclusive license to use the app for individual learning. You may not copy, extract, or redistribute the content for commercial purposes.</p>
+  </section>
+
+  <!-- S7 -->
+  <section id="s7">
+    <h2><span class="sec-num">7</span> Privacy and Data Protection</h2>
+    <p>We collect and process your personal data strictly in accordance with our <a href="./privacy.html">Privacy Policy</a>.</p>
+    <p>Your encrypted messages, practice data, and AI interactions are stored securely. By continuing to use the service, you confirm that you have read and consent to the data practices outlined in our Privacy Policy.</p>
+  </section>
+
+  <!-- S8 -->
+  <section id="s8">
+    <h2><span class="sec-num">8</span> Third-Party Services Integration</h2>
+    <p>Ortio relies on specialized third-party services to provide core functionality:</p>
+    <ul>
+      <li><strong>AI Chat:</strong> Powered by <strong>Google Gemini 2.5 Flash Lite</strong>.</li>
+      <li><strong>Speech Recognition:</strong> Powered by <strong>Grok Whisper API</strong>.</li>
+      <li><strong>Database & Auth:</strong> Managed securely by <strong>Supabase</strong>.</li>
+      <li><strong>Infrastructure & Analytics:</strong> Provided by <strong>Google Firebase / Crashlytics</strong>.</li>
+    </ul>
+    <p>You acknowledge that the usage of these features may transmit text and audio data to these providers solely for functionality fulfillment.</p>
+  </section>
+
+  <!-- S9 -->
+  <section id="s9">
+    <h2><span class="sec-num">9</span> Limitation of Liability</h2>
+    <p>The Service is provided on an "as is" and "as available" basis. While we strive for accuracy, we make no warranties perfectly matching the actual official exams or assuring successful examination results.</p>
+    <p>Success in any official language examination depends entirely on your personal preparation and skills. Ortio is not responsible for any examination failures, missed opportunities, or damages resulting from reliance on the practice materials provided in the app.</p>
+    <p>To the maximum extent permitted by law, Prasad Mahankal shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use, or inability to use, the Service.</p>
+  </section>
+
+  <!-- S10 -->
+  <section id="s10">
+    <h2><span class="sec-num">10</span> Indemnification</h2>
+    <p>You agree to defend, indemnify, and hold harmless Prasad Mahankal from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses arising from your misuse of the Service or your violation of any of these Terms.</p>
+  </section>
+
+  <!-- S11 -->
+  <section id="s11">
+    <h2><span class="sec-num">11</span> Termination</h2>
+    <p>We may terminate or suspend your account and access to the Service immediately, without prior notice or liability, for conduct that violates these Terms of Service or is harmful to other users or the application itself.</p>
+  </section>
+
+  <!-- S12 -->
+  <section id="s12">
+    <h2><span class="sec-num">12</span> Changes to Terms</h2>
+    <p>We reserve the right to modify or replace these Terms at any time. When substantial updates occur, we will update the "Last Updated" date at the top of the terms and may notify users in the app. Your continued use of the Service after changes become effective constitutes acceptance of the revised Terms.</p>
+  </section>
+
+  <!-- S13 -->
+  <section id="s13">
+    <h2><span class="sec-num">13</span> Governing Law</h2>
+    <p>These Terms shall be interpreted and governed by the laws of India, without regard to conflict of law provisions. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the regional courts handling such matters.</p>
+  </section>
+
+  <!-- S14 -->
+  <section id="s14">
+    <h2><span class="sec-num">14</span> Contact Information</h2>
+    <p>If you have any questions about these Terms of Service, or wish to request an account deletion, please contact:</p>
+    <p><strong>Email:</strong> <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Terms of Service for <strong>Ortio</strong> — Developed by Prasad Mahankal</p>
+  <p style="margin-top: 6px;">Last updated: 7 April 2026 &nbsp;·&nbsp; <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
