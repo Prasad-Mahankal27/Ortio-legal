@@ -421,7 +421,7 @@
     <p><strong>Contact:</strong> <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a></p>
     <div class="callout callout-info">
       <span class="callout-icon">ℹ️</span>
-      <span>If you are an EU resident who requires a formal GDPR representative address, please contact me directly at support.ortio@gmail.com.</span>
+      <span>If required under applicable law, Ortio will designate a GDPR representative and provide the relevant contact details upon request.</span>
     </div>
   </section>
 
@@ -439,6 +439,7 @@
       <li><strong>Supabase User ID</strong> — internal identifier used to link all your data</li>
       <li><strong>Google account details</strong> (name, email, Google ID) — only if you sign in with Google</li>
     </ul>
+    <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;"><strong>Public Visibility:</strong> Your display name / username and profile photo (if uploaded) are public and visible to other users on the community feed and in chat features.</p>
 
     <h3>3.2 Practice & Learning Data</h3>
     <ul>
@@ -450,7 +451,7 @@
 
     <h3>3.3 Social & Communication Data</h3>
     <ul>
-      <li><strong>Posts, comments, and reactions</strong> you create in the community feed</li>
+      <li><strong>Posts, comments, and reactions</strong> you create in the community feed. These are visible to all registered users of the app.</li>
       <li><strong>Human Chat messages</strong> — sent to other users. These are <strong>end-to-end encrypted (E2EE)</strong> using TweetNaCl. Message content is stored as ciphertext on the server — I cannot read your messages.</li>
       <li><strong>AI Chat conversations</strong> — your messages to the AI tutor are sent to third-party AI providers in real time to generate responses (see Section 7)</li>
     </ul>
@@ -492,7 +493,7 @@
           <tr><td>Account creation & core app features</td><td><strong>Contract</strong> (Art. 6(1)(b))</td></tr>
           <tr><td>Analytics & crash reporting</td><td><strong>Legitimate Interest</strong> (Art. 6(1)(f))</td></tr>
           <tr><td>Push notifications</td><td><strong>Consent</strong> (Art. 6(1)(a))</td></tr>
-          <tr><td>Advertising personalization</td><td><strong>Consent</strong> (Art. 6(1)(a))</td></tr>
+          <tr><td>Advertising personalization (where required by applicable law)</td><td><strong>Consent</strong> (Art. 6(1)(a))</td></tr>
           <tr><td>Non-personalized advertising</td><td><strong>Legitimate Interest</strong> (Art. 6(1)(f)) or <strong>Consent</strong> depending on jurisdiction</td></tr>
           <tr><td>Security & abuse prevention</td><td><strong>Legitimate Interest</strong> (Art. 6(1)(f))</td></tr>
           <tr><td>Legal compliance</td><td><strong>Legal Obligation</strong> (Art. 6(1)(c))</td></tr>
@@ -558,7 +559,7 @@
         <div class="service-icon">📢</div>
         <div>
           <div class="service-name">Google AdMob (Advertising)</div>
-          <div class="service-desc">Ortio displays ads through Google AdMob. AdMob may collect and process advertising IDs, device specifications, IP address, and app usage data to measure and deliver personalized or non-personalized ads. Consent management is handled via Google's certified CMP/UMP.</div>
+          <div class="service-desc">Ortio displays ads through Google AdMob. AdMob may collect and process advertising IDs, device specifications, IP address, and app usage data to measure and deliver ads. Consent choices are stored and shared with Google and advertising partners to respect user preferences. AdMob may use data for personalized ads if you consent. You can manage ad consent in app settings.</div>
           <a class="service-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy ↗</a>
         </div>
       </div>
@@ -591,10 +592,10 @@
       </div>
 
     </div>
-    <p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Note on AI Processing:</strong> Messages and voice recordings submitted to AI-powered features (such as AI Chat and mock tests) are transmitted to the respective AI providers (Google and Groq) solely to produce transcriptions or replies, and are governed by their respective policy terms.</p>
+    <p style="margin-top: 20px; font-size: 14px; color: var(--text-secondary);"><strong>Note on AI Processing:</strong> Messages and voice recordings submitted to AI-powered features (such as AI Chat and mock tests) are transmitted to the respective AI providers (Google and Groq) solely to produce transcriptions or replies, and are governed by their respective policy terms. Ortio does not retain audio files after processing.</p>
     <div class="callout callout-success" style="margin-top: 20px;">
       <span class="callout-icon">✅</span>
-      <span><strong>I do not sell your personal data to any third party.</strong></span>
+      <span><strong>Ortio does not sell personal information to third parties as that term is traditionally defined.</strong> California users can opt out of the "sharing" of their personal information for targeted advertising in the app settings.</span>
     </div>
   </section>
 
@@ -667,6 +668,8 @@
           <tr><td>Firebase Analytics data</td><td>14 months (Firebase default)</td></tr>
           <tr><td>Crash reports (Crashlytics)</td><td>90 days</td></tr>
           <tr><td>Purchase receipts</td><td>While subscription is active + 1 year for tax/legal compliance</td></tr>
+          <tr><td>AI Chat conversations</td><td>Retained while your account exists or until deleted by you</td></tr>
+          <tr><td>Audio recordings & Transcriptions</td><td>Audio recordings are not stored by Ortio after processing; transcriptions are kept while your account exists</td></tr>
           <tr><td>Local device data (AsyncStorage, Keychain)</td><td>Until app is uninstalled or app data is cleared</td></tr>
         </tbody>
       </table>
@@ -680,13 +683,15 @@
       <span class="callout-icon">✅</span>
       <span>Ortio provides an <strong>in-app account deletion feature</strong> accessible from Settings → Danger Zone → Delete Account.</span>
     </div>
-    <p>When you request and confirm account deletion within the app (by entering the required confirmation phrase), your account data, profile details, messages, and progress are deleted from our systems. Certain purchase and transaction records may be retained for tax, regulatory, or legal compliance reasons.</p>
+    <p>When you request and confirm account deletion within the app (by entering the required confirmation phrase), your account data, profile details, messages, and progress are deleted from our systems. Account deletion requests are typically processed immediately or within 30 days, except where limited retention is required for legal, security, fraud-prevention, tax, or regulatory obligations.</p>
+    <p>You can also request account deletion using our online request form: <a href="https://forms.gle/xXpCvJsGasWYSZu56" target="_blank" rel="noopener">Ortio Account Deletion Request Form</a>.</p>
     <p>Alternatively, you may request account deletion by emailing <a href="mailto:support.ortio@gmail.com">support.ortio@gmail.com</a> with the subject "Account Deletion Request". We will process your request within 30 days.</p>
   </section>
 
   <!-- S14 -->
   <section id="s14">
     <h2><span class="sec-num">14</span> Your Privacy Rights</h2>
+    <h3>Your Privacy Rights</h3>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Right</th><th>What It Means</th></tr></thead>
@@ -696,6 +701,7 @@
           <tr><td><strong>Erasure</strong></td><td>Request deletion of your account and all data</td></tr>
           <tr><td><strong>Portability</strong></td><td>Receive your data in a structured, portable format</td></tr>
           <tr><td><strong>Objection</strong></td><td>Object to certain types of processing</td></tr>
+          <tr><td><strong>Restriction</strong></td><td>Request restriction of processing your personal data</td></tr>
           <tr><td><strong>Withdraw Consent</strong></td><td>Disable push notifications at any time via device Settings</td></tr>
         </tbody>
       </table>
@@ -730,11 +736,11 @@
       </div>
       <div class="perm-row">
         <span class="perm-tag">Camera / Photos</span>
-        <span class="perm-desc">For uploading profile photos and post images</span>
+        <span class="perm-desc">For uploading profile photos and post images (accessed via system media picker or if camera access is explicitly granted)</span>
       </div>
       <div class="perm-row">
-        <span class="perm-tag">Storage</span>
-        <span class="perm-desc">For caching content locally on your device</span>
+        <span class="perm-tag">Storage (if requested)</span>
+        <span class="perm-desc">For caching content locally or reading selected media files on older device versions</span>
       </div>
       <div class="perm-row">
         <span class="perm-tag">Network State</span>
